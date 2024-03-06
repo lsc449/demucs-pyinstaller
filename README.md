@@ -10,8 +10,7 @@ pip install virtualenv
 ````
 ### 2. 创建运行环境
 ```
-virtualenv [虚拟环境名称] 
-virtualenv venv
+virtualenv venv --no-setuptools --no-wheel
 ```
 
 ### 3. 激活环境
@@ -40,9 +39,19 @@ Windows 10:
 ## 安装依赖
 ### With CUDA support (Windows & Linux)
 ```
-pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116 demucs SoundFile
+./venv/bin/pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116 demucs SoundFile
 ```
 ### CPU only (Any OS)
 ```
-pip3 install torch torchvision torchaudio demucs SoundFile
+./venv/bin/pip install torch torchvision torchaudio demucs SoundFile
+```
+
+### 查看已安装的包
+```
+./venv/bin/pip freeze
+```
+
+### 打包
+```
+pyinstaller separate.py
 ```
