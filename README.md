@@ -43,7 +43,7 @@ Windows 10:
 ```
 ### CPU only (Any OS)
 ```
-./venv/bin/pip install torch torchvision torchaudio demucs SoundFile
+./venv/bin/pip install torch torchvision torchaudio demucs SoundFile pyinstaller
 ```
 
 ### 查看已安装的包
@@ -53,5 +53,5 @@ Windows 10:
 
 ### 打包
 ```
-pyinstaller separate.py
+./venv/bin/pyinstaller separate.py
 ```
