@@ -108,8 +108,8 @@ def main(opts=None):
         sys.exit(1)
 
     def callback(data):
+        print(data)
         if args.log_file_path:
-            print(data)
             file = open(args.log_file_path, 'w')
             file.write(str(data))
             file.close()

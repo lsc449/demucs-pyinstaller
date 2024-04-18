@@ -39,11 +39,11 @@ Windows 10:
 ## 安装依赖
 ### With CUDA support (Windows & Linux)
 ```
-./venv/bin/pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116 demucs SoundFile
+pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116 demucs SoundFile
 ```
 ### CPU only (Any OS)
 ```
-./venv/bin/pip install torch torchvision torchaudio demucs SoundFile pyinstaller
+pip install torch torchvision torchaudio demucs SoundFile pyinstaller
 ```
 
 ### 查看已安装的包
@@ -53,5 +53,5 @@ Windows 10:
 
 ### 打包
 ```
-./venv/bin/pyinstaller separate.py
+pyinstaller separate.py
 ```
